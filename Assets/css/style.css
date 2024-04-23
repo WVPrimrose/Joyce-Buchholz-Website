@@ -3,7 +3,8 @@
 }
 
 header{
-    border:#000000 solid 3px
+    border:#000000 solid 3px;
+    border-width: 100%;
 }
 
 h1 {
@@ -22,29 +23,129 @@ nav ul li {
     border: 2px solid #000000;
 }
 
+
+nav ul li:nth-child(odd) {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+nav ul li:nth-child(even){
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
 nav ul li a {
     text-decoration: none;
+    color:#000000;
 }
 
-nav ul li:nth-child(2){
-    background-color: #000000;
-}
 
-nav ul li a:nth-child(2) {
+nav ul li a:nth-child(even) {
     color: #ffffff;
+    background-color:#000000;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
     color:#000b6e;
     background-color: #ffffff;
     border: 2px solid #000000;
-    max-width: 100px;
+    max-width: 150px;
     text-align: center;
     align-items: center;
+    justify-items: center;
+    font-size: 30px;
+}
+
+p,
+label,
+input,
+textarea {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+p {
+    margin-left: 500px;
+}
+
+label,
+input,
+textarea {
+    margin-left: 400px;
+    margin-bottom: 30px;
+}
+
+main a {
+    margin-left: 550px;
+    position: relative;
+    top: 20px;
+    color:#000000;
+    text-decoration: none;
+}
+
+main a:hover {
+    background-color:#000000;
+    color:#ffffff;
+}
+
+main a:focus {
+    color:#000000;
+    background-color: #ffffff;
+}
+
+main a:active {
+    color:#000b6e;
+    background-color:#a2bbff;
+    border: 1px double #000000;
 }
 
 input,
 textarea {
     background-color: #ffffff;
     color:#000000;
+    width: 400px;
+}
+
+textarea {
+    height: 400px;
+}
+
+.button {
+    justify-items: center;
+    width: 400px;
+    background-color:#000b6e;
+    color: #ffffff;
+    border: 2px solid #000000;
+    display: block;
+    padding: 5px;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 20px 5px #7f0099;
+    border: 2px solid #ffffff;
+}
+
+.button:focus {
+    box-shadow: 1px 1px 20px 10px #fbff00;
+    border: 2px solid #000000;
+    background-color:#001aff;
+}
+
+.nav-background{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-background-2 {
+    background-color: #000000;
+    color:#ffffff;
 }
