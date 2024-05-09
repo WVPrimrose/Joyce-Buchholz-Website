@@ -8,9 +8,9 @@ header{
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 20px;
-    font-weight: 700;
+    font-weight: 700;   
 }
 
 nav ul li {
@@ -148,4 +148,10 @@ textarea {
 .nav-background-2 {
     background-color: #000000;
     color:#ffffff;
+}
+
+#credit {
+    position:relative;
+    top: 100px;
+    border: 2px solid #000000
 }
