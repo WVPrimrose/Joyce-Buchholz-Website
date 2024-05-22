@@ -7,20 +7,27 @@ header{
     border-width: 100%;
 }
 
+
+
 h1 {
+    background-color: #ffffff;
+    width: 925px;
     font-size: 50px;
-    margin: 20px;
-    font-weight: 700;   
+    font-weight: 700;
+    margin-left: 250px;
+    justify-content: center;
+    align-items: center;
+    animation: transparent 5s linear 1s 1;
 }
 
 nav ul li {
-    display:inline;
+    display: inline;
     position: relative;
-    left: 600px;
-    bottom: 60px;
+    left: 300px;
     padding: 15px;
     margin: 20px;
     border: 2px solid #000000;
+    animation: drop 2s linear 6s 1 normal;
 }
 
 
@@ -51,16 +58,7 @@ main {
     align-items: center;
 }
 
-h2 {
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    max-width: 150px;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    font-size: 30px;
-}
-
+h2,
 p,
 label,
 input,
@@ -68,7 +66,17 @@ textarea {
     justify-items: center;
     justify-content: center;
     align-items: center;
-} 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: transparent 5s linear 1s 1;
+}
+
+h2 {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    max-width: 150px;
+    text-align: center;
+    font-size: 30px;
+}
 
 p {
     margin-left: 500px;
@@ -87,6 +95,7 @@ main a {
     top: 20px;
     color:#000000;
     text-decoration: none;
+    animation: transparent 5s linear 1s 1;
 }
 
 main a:hover {
@@ -149,6 +158,10 @@ textarea {
     color:#ffffff;
 }
 
+.section {
+    background-color: #ffffff;
+}
+
 #credit {
     position:relative;
     top: 100px;
@@ -177,4 +190,27 @@ textarea {
     background-color: #000000;
     letter-spacing: .5px;
     font-weight: 400;
+}
+
+#welcome {
+    margin-left: 300px;
+}
+
+@keyframes transparent {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%
+    }
+  }
+@keyframes drop {
+    0% {
+        position: relative;
+        top: 0px;
+    }
+    100% {
+        position: relative;
+        top: 90px;
+    }
 }
