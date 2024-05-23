@@ -4,18 +4,6 @@ h2 {
 
 main ul li {
     list-style-type: none;
-    
-}
-
-main ul li :nth-child(odd) {
-    background-color: #ffffff;
-    border: 2px solid #000000;
-}
-
-main ul li :nth-child(even){
-    background-color: #000000;
-    color: #ffffff;
-    border: 2px solid #ffffff;
 }
 
 main ul li a {
@@ -28,5 +16,15 @@ main ul li a {
     border: 2px solid #000000;
     max-width: 200px;
     text-decoration: none;
+    text-align: center;
 }
 
+main ul li a:nth-child(odd) {
+    color:#000000;
+    background-color:#ffffff;
+}
+
+main ul li a:nth-child(even) {
+    color:#ffffff;
+    background-color: #000000;
+}
