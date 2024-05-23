@@ -18,6 +18,14 @@ textarea {
     animation: transparent 5s linear 1s 1;
 }
 
+h2 {
+    margin-left: 75px;
+}
+
+h3 {
+    margin-left: 300px;
+}
+
 p {
     margin-left: 500px;
 }
@@ -27,6 +35,13 @@ input,
 textarea {
     margin-left: 400px;
     margin-bottom: 30px;
+}
+
+label {
+    background-color:#c3d3ff;
+    color:#000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
 }
 
 main a {
@@ -84,6 +99,8 @@ footer {
     padding: 5px;
     margin-left: 400px;
     margin-top: 20px;
+    position:relative;
+    bottom: 20px;
 }
 
 .button:hover {
@@ -97,8 +114,10 @@ footer {
     background-color:#001aff;
 }
 
-.section {
-    background-color: #ffffff;
+.section {    
+    background-color:#c3d3ff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 13px #000b6e;
 }
 
 #Home-tab {
